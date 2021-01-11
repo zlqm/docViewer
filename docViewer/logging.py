@@ -6,7 +6,7 @@ formatter = logging.Formatter(
 ch = logging.StreamHandler()
 ch.setFormatter(formatter)
 
-logger = logging.getLogger('showDoc')
+logger = logging.getLogger('docViewer')
 logger.addHandler(ch)
 
 

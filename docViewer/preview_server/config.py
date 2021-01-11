@@ -1,5 +1,5 @@
 import os
-from showDoc.config import CONFIG
+from docViewer.config import CONFIG
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')

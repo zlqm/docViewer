@@ -1,8 +1,8 @@
-########
-showDoc
-########
+#########
+docViewer
+#########
 
-``showDoc`` is a small tool to help you write document.
+``docViewer`` is a small tool to help you write document.
 
 
 Features
@@ -26,10 +26,10 @@ Command Line
 
 - render doc to html file
   * ``renderDoc``
-  * ``python -m showDoc render``
+  * ``python -m docViewer render``
 - live preview doc 
   * ``previewDoc``
-  * ``python -m showDoc preview``
+  * ``python -m docViewer preview``
 
 
 Vim Plugin
@@ -37,7 +37,7 @@ Vim Plugin
 
 1. Install the plugin
 
-   ``Plug 'zlqm/showDoc', { 'rtp': 'plugins/vim' }``
+   ``Plug 'zlqm/docViewer', { 'rtp': 'plugins/vim' }``
 
 2. Editing a rst file and run command
 
@@ -51,6 +51,6 @@ Demo
 
 Just run this command and you can preview the doc in browser::
 
-  showDoc ) previewDoc demo.rst
+  docViewer ) previewDoc demo.rst
   Start preview server [debug: False] bind to localhost:9000
   visit http://localhost:9000/lite-preview?filename=demo.rst to preview

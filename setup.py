@@ -4,14 +4,14 @@ with open('README.rst') as f:
     long_description = f.read()
 
 setuptools.setup(
-    name='showDoc',
+    name='docViewer',
     version='1.0.0',
     author='Abraham',
     author_email='abraham.liu@hotmail.com',
     description='document tool',
     install_requires=[
         'click',
-        'p_config',
+        'p_config>=1.2.0',
         'docutils',
         'requests',
         'tornado',

@@ -5,9 +5,9 @@ import sys
 import click
 import tornado
 
-from showDoc.preview_server import make_app, close_when_idle
-from showDoc.render import guess_method, render as render_doc
-from showDoc.logging import set_logging_level
+from docViewer.preview_server import make_app, close_when_idle
+from docViewer.render import guess_method, render as render_doc
+from docViewer.logging import set_logging_level
 
 
 @click.group()

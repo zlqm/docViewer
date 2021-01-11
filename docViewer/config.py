@@ -7,7 +7,7 @@ from p_config import Config
 CURRENT_DIR = os.path.abspath(os.path.curdir)
 
 default_config = {
-    'cache_root': tempfile.mktemp(prefix='showDoc/'),
+    'cache_root': tempfile.mktemp(prefix='docViewer/'),
     'plantuml.server': 'https://www.plantuml.com/plantuml/',
     'plantuml.image_format': 'svg',
     'logging.level': logging.WARNING,
@@ -15,8 +15,8 @@ default_config = {
 CONFIG = Config(**default_config)
 
 config_files = [
-    os.path.abspath(os.path.expanduser('~/.config/showDoc.yaml')),
-    os.path.join(CURRENT_DIR, 'showDoc.yaml')
+    os.path.abspath(os.path.expanduser('~/.config/docViewer.yaml')),
+    os.path.join(CURRENT_DIR, 'docViewer.yaml')
 ]
 for config_file in config_files:
     if os.path.exists(config_file):

@@ -1,4 +1,4 @@
 #!/bin/bash
 set -e
 
-python -m showDoc render $*
+python -m docViewer render $*

@@ -3,7 +3,7 @@ from pathlib import Path
 from tornado.ioloop import PeriodicCallback
 import tornado.websocket
 
-from showDoc.render import render_file
+from docViewer.render import render_file
 
 
 class BasePreview(tornado.websocket.WebSocketHandler):

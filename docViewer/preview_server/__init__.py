@@ -7,7 +7,7 @@ import tornado.web
 
 from . import config, urls
 
-logger = logging.getLogger('showDoc.server')
+logger = logging.getLogger('docViewer.server')
 
 
 def make_app(**kwargs):

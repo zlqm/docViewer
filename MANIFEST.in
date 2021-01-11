@@ -1,3 +1,3 @@
-graft showDoc/ 
+graft docViewer/ 
 global-exclude __pycache__
 global-exclude *.py[co]

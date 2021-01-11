@@ -1,4 +1,4 @@
 #!/bin/bash
 set -e
 
-python -m showDoc preview $*
+python -m docViewer preview $*
