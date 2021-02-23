@@ -1,5 +1,6 @@
 from functools import partial
 import logging
+import os
 import sys
 
 import click
@@ -8,6 +9,7 @@ import tornado
 from docViewer.preview_server import make_app, close_when_idle
 from docViewer.render import guess_method, render as render_doc
 from docViewer.logging import set_logging_level
+from docViewer.openapi import app as openapi_app
 
 
 @click.group()
@@ -48,6 +50,15 @@ def preview(filename, port, address, debug):
             f'lite-preview?filename={filename}'
         click.echo(f'visit {preview_url} to preview')
     tornado.ioloop.IOLoop.current().start()
+
+
+@cli.command()
+@click.argument('filename', required=True)
+@click.option('--port', default='9000')
+@click.option('--host', default='localhost')
+def preview_openapi(filename, port, host):
+    os.environ.setdefault('API_DOC', filename)
+    openapi_app.run(host=host, port=port)
 
 
 if __name__ == '__main__':
